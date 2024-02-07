@@ -1,0 +1,9 @@
+Header header
+float64 latitu
+float64 longitu
+float64 altitu
+float64 utm_e
+float64 utm_n
+uint64 fix
+int64 Zone_no
+string Zone_let
