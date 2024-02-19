@@ -34,7 +34,10 @@ As discussed earlier, there are two sets of data available: one with magnetomete
 
 <img width="230" alt="image" src="https://github.com/PanchalM19/Sensor-fusion/assets/115374409/07730992-a0c7-4c6d-8fba-929d90ba5f15">
 
+## Conclusion
+We successfully constructed a navigation stack utilizing the Inertial Measurement Unit (IMU) and cross-validated the generated plots with GPS data. Through our analysis, we estimated the distance of the IMU from the center of mass to be approximately 0.102 meters, equivalent to about 1.9 centimeters. This determination closely aligns with our expectations.
 
+However, it's important to acknowledge potential sources of error. During turns, a notable amount of skidding occurs, which we assumed to be negligible (0) in our calculations. This assumption introduces potential inaccuracies in our estimation process, which should be considered when interpreting the results.
 
 
 
