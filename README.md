@@ -7,7 +7,7 @@ parameters are then calculated from the captured raw magnetometer measurements. 
 
 The offset of the center of this ellipsoid is due to the Hard-iron errors which is caused by permanent magnetic fields around the sensor. The deviation of the path from a circle to an ellipsoid is due to the Soft-iron errors and causes it to rotate. These are caused by the paramagnetic materials like ferrous metals.
 
-<img width="230" alt="image" src="https://github.com/PanchalM19/Sensor-fusion/assets/115374409/31187334-6dc9-4ac7-bac5-fd0428b7cfc4">
+<img width="500" alt="image" src="https://github.com/PanchalM19/Sensor-fusion/assets/115374409/31187334-6dc9-4ac7-bac5-fd0428b7cfc4">
 
 To get the yaw angle from the yaw rate sensor, we integrate it. This gives us the yaw angle from the Gyro z-axis. To implement a complementary filter, we process the magnetometer's yaw angle with a Low Pass Filter (LPF) to reduce noise, and the gyro's yaw angle with a High Pass Filter (HPF) to eliminate bias. By combining these outputs, the complementary filter prioritizes the stable, long-term data from the magnetometer while compensating for short-term drift in the gyro. This results in an accurate and stable estimation of yaw angle over varying time scales.
 
